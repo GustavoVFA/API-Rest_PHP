@@ -73,10 +73,13 @@
 			
 		
 			case 'getheroes':
+				session_start();
 				$db = new DbOperation();
 				$response['error'] = false; 
 				$response['message'] = 'Pedido concluído com sucesso';
 				$response['heroes'] = $db->getHeroes();
+				$_SESSION['heroes']= $response['heroes'];
+				header('Location: ../index.php');
 			break; 
 			
 			
