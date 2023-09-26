@@ -23,3 +23,4 @@ ALTER TABLE `heroes`
 ALTER TABLE `heroes`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
+select * from heroes;
